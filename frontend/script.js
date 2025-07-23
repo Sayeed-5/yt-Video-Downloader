@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Backend Flask server ka URL
     // Make sure this matches where your Flask app is running
-    const BACKEND_URL = 'http://127.0.0.1:5000'; // Flask default port
+    const BACKEND_URL = 'https://yt-video-downloader-6inq.onrender.com'; // Flask default port
 
     function showMessage(msg, type = 'info') {
         messageDisplay.textContent = msg;
