@@ -15,6 +15,10 @@ DOWNLOAD_DIR = "downloads"
 if not os.path.exists(DOWNLOAD_DIR):
     os.makedirs(DOWNLOAD_DIR)
 
+@app.route('/')
+def home():
+    return "YouTube Video Downloader Backend is Live! Use the frontend to download videos."
+
 @app.route('/download', methods=['POST'])
 def download_video():
     data = request.get_json()
